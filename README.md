@@ -4,7 +4,7 @@ Sering Lupa :v
 ### Simple State Provider
 Komponen Provider, sebelumnya install terlebih dahulu provider pada ![PubDev]('https://pub.dev/packages/provider')
 
-#### SharedProvider
+### SharedProvider
 pada shared provider ini terdapat widget-widget yang ingin kita ubah contohnya :
 
 ```Dart
@@ -33,7 +33,7 @@ class GenderProvider with ChangeNotifier {
 
 gunakan ChangeNotifier yang digunakan untuk memberitahu pada Consumer jika ada perubahan
 
-#### ChangeNotifierProvider
+### ChangeNotifierProvider
 ```Dart
 ChangeNotifierProvider<{nama_provider}>(
     create: (context) => {nama_provider},
@@ -49,7 +49,7 @@ Widget build(BuildContext context) {
     ......
 ```
 
-#### Consumer
+### Consumer
 berisikan perubahan-perubahan pada widget yang kita ingin ubah, contohnya color pada widget text dibawah ini:
 
 ```Dart
