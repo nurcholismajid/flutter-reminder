@@ -64,3 +64,20 @@ Consumer<GenderProvider>(
       ),
     ),
 ```
+
+### Migration Laravel
+Buat table
+
+```php
+php artisan make:migration create_nama_table_table --create=nama_table
+```
+
+Menambahkan Field Pada Tabel Yang Sudah Ada
+```php
+php artisan make:migration add_nama_table_table --table=nama_table
+```
+
+Migrasi
+```php
+php artisan migrate
+```
